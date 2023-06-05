@@ -1,0 +1,405 @@
+:root {
+    --color-primario: #292F2E;
+    --color-secundario: #136F63;
+    --color-secundario2: #126257;
+    --color-terciario: #22AAA1;
+    --color-cuaternario: #4CE0D2;
+    --color-quintillizo: #84CAE7;
+    --color-quintillizo2: #70ACC6;
+    --casi-negro: #121414;
+    --color-negro: #000;
+    --casi-blanco: #C2E4E1;
+    --color-blanco: #fff;
+    --contacto: #626E6B;
+}
+
+* {
+ margin: 0;
+ padding: 0;   
+}
+
+
+body {
+    background: linear-gradient(var(--color-primario), var(--casi-negro));
+    font-family: 'Titillium Web';
+    text-align: center;
+    color: white;
+}
+
+header hr {
+    height: 4px;
+    border: 0;
+    background-image: linear-gradient(to right, rgba(0,0,0,0), rgb(201, 191, 228), rgba(0,0,0,0));
+}
+
+hr {
+    margin-top: 10px;
+    height: 1px;
+    border: 0;
+    background-image: linear-gradient(to right, rgba(0,0,0,0), var(--color-quintillizo), rgba(0,0,0,0));
+}
+
+header { 
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    height: 300px;
+    color: var(--color-blanco);
+    background: linear-gradient(to right, var(--color-negro), rgba(0,0,0,0))
+
+}
+
+header img {
+    opacity: 0.2;
+    height: 100%;
+    width: 100%;
+}
+
+.texto-superpuesto {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+}
+
+header h1 {
+    padding-top: 50px;
+    font-size: 50px;
+}
+
+header h2 {
+    margin: 10px 0 20px;
+    font-size: 35px;
+}
+
+header p {
+    display: inline-block;
+    font-style: italic;
+    padding: 5px;
+    font-size: 25px;
+}
+
+#menu {
+    box-sizing: border-box;
+    border: groove var(--color-cuaternario) 1px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 5vh;
+    background: linear-gradient(var(--casi-negro), var(--color-negro));
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.enlaces {
+    box-sizing: border-box;
+    border: solid rgba(255,255,255,0.1) 1px;
+    padding: 4px;
+    background-color: rgba(0,0,0,0);
+    transition: background-color 0.3s ease;
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+#menu a:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 900;
+    margin-top: 50px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+#portafolio {
+    height: 100vh;
+    padding: 30px;
+}
+
+.contenedor-proyectos {
+    position: relative;
+    height: 85%;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.video-container {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    background-color: #FFF;
+    height: 80%;
+    width: 80%;
+    transform: scale(0);
+    transition: all 0.2s ease-in-out;
+}
+
+.frame-container {
+    box-sizing: border-box;
+    border: groove 1px var(--casi-negro);
+    box-shadow: 4px 4px 6px rgba(0,0,0,0.4);
+    background: radial-gradient(circle, var(--color-primario), var(--casi-negro));
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mostrar {
+    transform: scale(1);
+}
+
+#cerrar {
+    border: groove 1px var(--color-primario);
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 3px 7px;
+    background-color: var(--color-quintillizo2);
+}
+
+#cerrar:hover {
+    background-color: var(--color-quintillizo);
+}
+
+figure {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    box-sizing: border-box;
+    background-color: rgba(41,47,46,0.8);
+    height: 50%;
+    width: 100%;
+}
+
+figcaption {
+    color: var(--casi-blanco);
+    font-weight: bold;
+}
+
+.img-vid {
+    height: 150px;
+    transform: scale(1);
+    transition: all 0.2s ease-in-out;
+}
+
+.img-vid:hover {
+    transform: scale(1.1);
+}
+
+.projects {
+    border-radius: 20px;
+    margin: 0 auto;
+    background-color: #22AAA1;
+    height: 300px;
+    width: 300px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.projects:hover {
+    transform: scale(1.1);
+}
+
+.contenedor-proyectos .project-1 {
+    background-image: url(portafolio-de-videos.jpg);
+}
+
+#contenedor-habilidades {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 45px 10px;
+    padding: 70px 100px;
+}
+
+.habilidades-seccion {
+    height: 100vh;
+    padding: 30px;
+}
+
+.habilidades-contenidas {
+    transition: transform 0.2s ease-in-out;
+    padding: 10px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 130px;
+    border-radius: 20px;
+}
+
+.habilidades-contenidas:hover {
+    transform: scale(1.2);
+}
+
+.habilidades-contenidas .cap {
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+}
+
+.habilidades-contenidas:hover .cap {
+    opacity: 1;
+}
+
+img {
+    height: 80px;
+}
+
+#experiencia {
+    height: 100vh;
+    padding: 30px;
+}
+
+#contenedor-experiencia {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    height: 500px;
+    color: var(--casi-negro)
+}
+
+.años {
+    margin-top: 50px;
+    display: flex;
+    width: 80%;
+    height: 30px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--color-secundario);
+    color: var(--casi-blanco);
+}
+
+.años div {
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    border: 1px black solid;
+    cursor: pointer;
+}
+
+.años div:hover {
+    background-color: var(--color-secundario2);
+}
+
+.jobs {
+    position: absolute;
+    display: flex;
+    border-radius: 15px;
+    padding: 30px 50px;
+    width: 900px;
+    margin-top: 120px;
+    background: linear-gradient(to right, var(--color-quintillizo2), var(--color-quintillizo));
+    border: 5px var(--color-cuaternario) outset;
+}
+
+.job-1 {
+    transform: translateX(-100%) scale(0);
+    transition: all 0.2s ease-in-out;
+}
+
+.job-2 {
+    transform: translateX(0) scale(0);
+    transition: all 0.2s ease-in-out;
+}
+
+.job-3 {
+    transform: translateX(100%) scale(0);
+    transition: all 0.2s ease-in-out;
+}
+
+.active {
+    transform: translateX(0) scale(1);
+}
+
+.title {
+    width: 35%;
+}
+
+.description {
+    width: 65%;
+}
+
+.description ul li a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: var(--color-primario);
+}
+
+/*  seccion   */
+#contacto {
+    height: 100vh;
+    background: radial-gradient(circle, var(--color-primario), var(--casi-negro));
+    color: var(--color-blanco);
+}
+
+/*      contenedor del form      */
+.contacto {
+    position: relative;
+    padding: 30px 0;
+    height: 300px;
+}
+
+form {
+    position: absolute;
+    top: 80%;
+    margin: 0;
+    padding: 30px 0;
+    width: 100%;
+}
+
+form label {
+    display: block;
+    width: 40%;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+form input, textarea {
+    border: 1px inset white;
+    height: 20px;
+    display: block;
+    padding: 5px;
+    width: 40%;
+    margin: 10px auto 15px auto;
+    background-color: var(--casi-negro);
+    color: var(--color-cuaternario);
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 5px 15px;
+    background-color: var(--color-quintillizo);
+}
+
+button:hover {
+    background-color: var(--color-quintillizo2);
+}
+
+form textarea {
+    resize: none;
+}

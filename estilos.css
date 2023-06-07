@@ -265,6 +265,11 @@ img {
     height: 80px;
 }
 
+#npm {
+    width: 80%;
+    object-fit: contain;
+}
+
 #experiencia {
     height: 100vh;
     padding: 30px;
@@ -357,15 +362,34 @@ img {
 
 /*      contenedor del form      */
 .contacto {
-    position: relative;
-    padding: 30px 0;
-    height: 300px;
+    height: 80%;
+    /* position: relative; */
+    padding: 30px 0 0 0;
+}
+
+#mis-redes {
+    padding: 0 640px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#mis-redes a img {
+    height: 40px;
+    transform: scale(1);
+    transition: all 0.2s ease-in-out;
+}
+
+#mis-redes a img:hover {
+    transform: scale(1.2);
 }
 
 form {
-    position: absolute;
+/*     position: absolute;
     top: 80%;
-    margin: 0;
+    margin: 0; */
+    margin-top: 100px;
     padding: 30px 0;
     width: 100%;
 }

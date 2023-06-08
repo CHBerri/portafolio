@@ -445,6 +445,10 @@ form textarea {
 
 @media (max-width: 960px) {
 
+    .video-container {
+        width: 90%;
+    }
+
     header {
         height: 200px;
     }
@@ -531,6 +535,10 @@ form textarea {
         height: auto;
     }
 
+    #experiencia {
+        height: 850px;
+    }
+
     .jobs {
         flex-direction: column;
         width: 95%;
@@ -541,8 +549,7 @@ form textarea {
     .title {
         margin: 0 auto;
         text-align: center;
-        width: 400px;
-        background-color: rgba(97, 82, 151, 0.1);
+        width: 100%;
     }
 
     .description {

@@ -12,7 +12,8 @@
 </head>
 <body id="cuerpo">
     <header id="inicio">
-        <img src="background1.jpeg" alt="">
+        <!--<img src="background1.jpeg" alt="">-->
+        <!-- <video src="espectro.mp4" autoplay muted loop></video> -->
         <div class="texto-superpuesto">
             <h1>Carlos Israel Cabello Mora <i class="fa-solid fa-dinosaur"></i></h1> 
             <hr>
@@ -32,34 +33,27 @@
                 <h3 class="portafolio">Portafolio</h3>
                 <hr>
                 <div class="contenedor-proyectos">
-                    <div class="project-1 projects" id="ver_videos"></div>
-                    <div class="project-2 projects"></div>
-                    <div class="project-3 projects"></div>
-
-                    <div id="videos" class="video-container">
-                        <button id="cerrar" type="button">X</button>
-                        <div class="frame-container">
-                            <figure>
-                                <a href="https://www.youtube.com/watch?v=ao1L6-CGm1w&t=98s" target="_blank">
-                                    <img src="video-1.jpg" alt="" class="img-vid">
-                                </a>
-                                <figcaption>Video 1</figcaption>
-                            </figure>
-                            <figure>
-                                <a href="https://www.youtube.com/watch?v=I9ZXAw--zi0" target="_blank">
-                                    <img src="video-2.jpg" alt="" class="img-vid">
-                                </a>
-                                <figcaption>Video 2</figcaption>
-                            </figure>
-                            <figure>
-                                <a href="https://www.youtube.com/watch?v=h4zjccKS8mI&t=29s" target="_blank">
-                                    <img src="video-3.jpg" alt="" class="img-vid">
-                                </a>
-                                <figcaption>Video 3</figcaption>
-                            </figure>
+                    <div class="project-1 projects">
+                        <div class="project-hover">
+                            <div>
+                                <img src="website.png" alt="" title="GitHub">
+                                <img src="GitHub.png" alt="" title="GitHub">    
+                            </div>
+                            <h4>Deslizador de imagenes</h4>
                         </div>
                     </div>
+                    <div class="project-2 projects">
+                        <div class="project-hover">
+                            <div>
+                                <img src="website.png" alt="" title="GitHub">
+                                <img src="GitHub.png" alt="" title="GitHub">    
+                            </div>
+                            <h4>Contador de clicks</h4>
+                        </div>
+                    </div>
+                    <div class="project-3 projects">
 
+                    </div>
                 </div>
         </section>
         <section class="habilidades-seccion" id="habilidades">
@@ -167,8 +161,32 @@
                             <li>Inserción de audio, imagenes y textos</li>
                             <li>Edición de color</li>
                             <li>Edición de imagenes en photoshop para las miniaturas</li>
-                            <li><a href="#portafolio">Ver ejemplos en portafolio</a></li>
+                            <li><a id="ver_videos">Ver ejemplos</a></li>
                         </ul>
+                    </div>
+                </div>
+
+                <div id="videos" class="video-container">
+                    <button id="cerrar" type="button">X</button>
+                    <div class="frame-container">
+                        <figure>
+                            <a href="https://www.youtube.com/watch?v=ao1L6-CGm1w&t=98s" target="_blank">
+                                <img src="video-1.jpg" alt="" class="img-vid">
+                            </a>
+                            <figcaption>Video 1</figcaption>
+                        </figure>
+                        <figure>
+                            <a href="https://www.youtube.com/watch?v=I9ZXAw--zi0" target="_blank">
+                                <img src="video-2.jpg" alt="" class="img-vid">
+                            </a>
+                            <figcaption>Video 2</figcaption>
+                        </figure>
+                        <figure>
+                            <a href="https://www.youtube.com/watch?v=h4zjccKS8mI&t=29s" target="_blank">
+                                <img src="video-3.jpg" alt="" class="img-vid">
+                            </a>
+                            <figcaption>Video 3</figcaption>
+                        </figure>
                     </div>
                 </div>
 
@@ -199,17 +217,17 @@
                 <hr>
                     <form action="https://formspree.io/f/xdovjvye" method="POST">
                         <label> Correo: 
-                            <input type="email" name="email" required>
+                            <input type="email" name="email" required placeholder="Tu correo...">
                         </label>
                         <label> Mensaje: 
-                            <textarea name="message"></textarea required>
+                            <textarea name="message" placeholder="Escribe tu mensaje..."></textarea required>
                         </label>
                         <button type="submit">Enviar</button>
                     </form>
                     <nav id="mis-redes">
-                        <a href="https://www.linkedin.com/in/carlos-israel-cabello-mora/" target="_blank"><img src="linkedin.png" alt=""></a>
-                        <a href="https://github.com/CHBerri" target="_blank" id="github"><img src="GitHub.png" alt=""></a>
-                        <a download="Curriculum vitae" target="_blank" href="Curriculum_vitae_CC.pdf"><img src="download.png" alt=""></a>
+                        <a href="https://www.linkedin.com/in/carlos-israel-cabello-mora/" target="_blank"><img src="linkedin.png" alt="" title="Linkedin"></a>
+                        <a href="https://github.com/CHBerri" target="_blank" id="github"><img src="GitHub.png" alt="" title="Github"></a>
+                        <a download="Curriculum vitae" target="_blank" href="Curriculum_vitae_CC.pdf"><img src="download.png" alt="" title="Descargar curriculum"></a>
                     </nav>
             </div>
 

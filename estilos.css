@@ -240,6 +240,11 @@ figcaption {
     background-position: center;
 }
 
+.project-1:hover,
+.project-2:hover {
+    backdrop-filter: blur(155px);
+}
+
 .projects:hover {
     transform: scale(1.1);
 }

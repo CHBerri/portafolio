@@ -72,7 +72,7 @@ header h1 {
 header h2 {
     margin: 10px 0 20px;
     font-size: 35px;
-    color: var(--color-terciario);
+    color: #35d6cb;
 }
 
 header p {
@@ -80,7 +80,7 @@ header p {
     font-style: italic;
     padding: 5px;
     font-size: 25px;
-    color: #3cdfd4;
+    color: #62f3e9;
 }
 
 #menu {
@@ -100,7 +100,7 @@ header p {
 
 .enlaces {
     box-sizing: border-box;
-    /* border: solid rgba(255,255,255,0.1) 1px; */
+    font-weight: bold;
     padding: 4px;
     background-color: rgba(0,0,0,0);
     transition: background-color 0.3s ease;
@@ -242,7 +242,12 @@ figcaption {
 
 .project-1:hover,
 .project-2:hover {
-    backdrop-filter: blur(155px);
+    backdrop-filter: blur(300px);
+}
+
+svg:hover {
+    stroke: white;
+    transition: all 0.3s ease-in-out;
 }
 
 .projects:hover {
@@ -259,7 +264,7 @@ figcaption {
     border-radius: 20px;
     height: 100%;
     width: 100%;
-    color: var(--casi-negro);
+    color: var(--color-negro);
     opacity: 0;
     transition: all 0.2s ease-in-out;
 }
@@ -477,9 +482,10 @@ form label {
 }
 
 form input, textarea {
+    font-family: 'Titillium Web';
     box-sizing: border-box;
     border: 1px inset white;
-    height: 30px;
+    height: 35px;
     display: block;
     padding: 5px;
     width: 250px;
@@ -502,6 +508,7 @@ button:hover {
 
 form textarea {
     resize: none;
+    height: 100px;
 }
 
 

@@ -227,7 +227,7 @@ figcaption {
 }
 
 .project-1 {
-    background-image: url('deslizador de imagenes.png');
+    background-image: url('deslizador de imagenes.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -240,10 +240,18 @@ figcaption {
     background-position: center;
 }
 
+.project-3 {
+    background-image: url('aplicacion de notas.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .project-1:hover,
 .project-2:hover {
     backdrop-filter: blur(300px);
 }
+
 
 svg:hover {
     stroke: white;
@@ -260,7 +268,7 @@ svg:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: rgba(0, 143, 143, 0.6);
+    background-color: rgba(0, 143, 143, 0.8);
     border-radius: 20px;
     height: 100%;
     width: 100%;
@@ -285,6 +293,7 @@ svg:hover {
     position: absolute;
     bottom: 30%;
     margin-top: 10px;
+    font-weight: 700;
 }
 
 .project-hover:hover {

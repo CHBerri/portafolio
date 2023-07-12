@@ -27,7 +27,68 @@ año3.addEventListener("click",  () => {
     job2.classList.remove("active");
 })
 
-// Variables y funciones para la sección del Portafolio
+
+// Constantes para el PORTAFOLIO
+
+const boton1 = document.querySelector('#boton1')
+const boton2 = document.querySelector('#boton2')
+const boton3 = document.querySelector('#boton3')
+const boton4 = document.querySelector('#boton4')
+const enlace1 = document.querySelector('#enlaceaweb')
+const enlace2 = document.querySelector('#enlaceagit')
+const titulo = document.querySelector('#tituloproyecto')
+const imagenDelProyecto = document.querySelector('#imagendelproyecto')
+
+boton1.addEventListener('click',() => {
+    //cambiar:
+    // imagen, enlaces y texto
+    enlace1.href = "https://deslizador-de-imagenes.netlify.app/"
+    enlace2.href = "https://github.com/CHBerri/Image-slider"
+    titulo.textContent = "Deslizador de imagenes"
+    imagenDelProyecto.style.background = "url('deslizador de imagenes.jpg')"
+    imagenDelProyecto.style.backgroundSize = 'cover' 
+    imagenDelProyecto.style.backgroundPosition = 'center'
+    imagenDelProyecto.style.backgroundRepeat = 'no-repeat'
+})
+
+boton2.addEventListener('click',() => {
+    //cambiar:
+    // imagen, enlaces y texto
+    enlace1.href = "https://cuantos-clicks.netlify.app/"
+    enlace2.href = "https://github.com/CHBerri/contador-de-clicks"
+    titulo.textContent = "Contador de clicks"
+    imagenDelProyecto.style.background = "url('contador de clicks.png')"
+    imagenDelProyecto.style.backgroundSize = 'cover' 
+    imagenDelProyecto.style.backgroundPosition = 'center'
+    imagenDelProyecto.style.backgroundRepeat = 'no-repeat'
+})
+
+boton3.addEventListener('click',() => {
+    //cambiar:
+    // imagen, enlaces y texto
+    enlace1.href = "https://guarda-tus-notas.netlify.app/"
+    enlace2.href = "https://github.com/CHBerri/Aplicacion-de-notas"
+    titulo.textContent = "Aplicación de notas"
+    imagenDelProyecto.style.background = "url('aplicacion de notas.jpg')"
+    imagenDelProyecto.style.backgroundSize = 'cover' 
+    imagenDelProyecto.style.backgroundPosition = 'center'
+    imagenDelProyecto.style.backgroundRepeat = 'no-repeat'
+})
+
+boton4.addEventListener('click',() => {
+    //cambiar:
+    // imagen, enlaces y texto
+    enlace1.href = "https://elahorcadojuego.netlify.app/"
+    enlace2.href = "https://github.com/CHBerri/ahorcado"
+    titulo.textContent = "Juego del ahorcado"
+    imagenDelProyecto.style.background = "url('juego del ahorcado.jpg')"
+    imagenDelProyecto.style.backgroundSize = 'cover' 
+    imagenDelProyecto.style.backgroundPosition = 'center'
+    imagenDelProyecto.style.backgroundRepeat = 'no-repeat'
+})
+
+
+// Variables y funciones para la sección de experiencia
 
 const videos = document.getElementById("videos");
 const ver_videos = document.getElementById("ver_videos");

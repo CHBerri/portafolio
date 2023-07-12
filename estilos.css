@@ -16,6 +16,7 @@
 * {
  margin: 0;
  padding: 0;   
+ box-sizing: border-box;
 }
 
 body {
@@ -28,7 +29,7 @@ body {
 
 header hr {
     margin: 0;
-    height: 3px;
+    height: 1px;
     border: 0;
     background-image: linear-gradient(to right, rgba(0,0,0,0), rgb(201, 191, 228), rgba(0,0,0,0));
 }
@@ -63,23 +64,55 @@ header video {
     margin: 0 auto;
 }
 
+.contenedor-titulo {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 3rem;
+    justify-content: center;
+    width: 800px;
+}
+
+.perfil {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url('perfil.png');
+    height: 100px;
+    width: 100px;
+}
+
+.contenedor-titulo div h1 {
+    padding: .3rem .5rem 0 .5rem;
+
+}
+
+.contenedor-titulo div h2 {
+    padding: 1.2rem .5rem 0 .5rem;
+    line-height: 0.9;
+    font-weight: 200;
+    color: var(--casi-blanco);
+}
+
+.contenedor-titulo div h2 span {
+    letter-spacing: 0.2rem;
+ }
+
 header h1 {
-    padding-top: 50px;
-    font-size: 50px;
+    font-size: 65px;
     color: #26bdb3;
 }
 
 header h2 {
     margin: 10px 0 20px;
-    font-size: 35px;
+    font-size: 28px;
     color: #35d6cb;
 }
 
 header p {
+    margin-top: 1.5rem;
     display: inline-block;
     font-style: italic;
-    padding: 5px;
-    font-size: 25px;
+    font-size: 16px;
     color: #62f3e9;
 }
 
@@ -139,10 +172,7 @@ h5 {
     position: relative;
     height: 85%;
     width: 100%;
-    display: grid;
     align-items: center;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
 }
 
 
@@ -218,54 +248,39 @@ figcaption {
 
 .projects {
     border-radius: 20px;
-    margin: 0 auto;
+    margin: 1.5rem auto;
     background-color: #22AAA1;
-    height: 300px;
-    width: 300px;
+    height: 550px;
+    width: 950px;
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
 }
 
 .project-1 {
+
     background-image: url('deslizador de imagenes.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.project-2 {
-    background-image: url('contador de clicks.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+svg {
+    z-index: 5;
 }
 
-.project-3 {
-    background-image: url('aplicacion de notas.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+.enlaces-portafolio {
+    pointer-events: all;
 }
-
-.project-1:hover,
-.project-2:hover {
-    backdrop-filter: blur(300px);
-}
-
 
 svg:hover {
     stroke: white;
     transition: all 0.3s ease-in-out;
 }
 
-.projects:hover {
-    transform: scale(1.1);
-}
-
 .project-hover {
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     flex-direction: column;
     background-color: rgba(0, 143, 143, 0.8);
@@ -277,23 +292,48 @@ svg:hover {
     transition: all 0.2s ease-in-out;
 }
 
-.project-hover div {
-    position: absolute;
-    top: 30%;
-    width: 150px;
+.botones {
+    /* background-color: crimson; */
+    display: flex;
+    align-items: flex-end;
 }
 
-.project-hover img {
-    margin: 0 10px;
-    height: 50px;
-    width: 50px;
+.titulo-del-proyecto {
+    /* background-color: chartreuse; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100px;
+    width: 500px;
+}
+
+.enlaces-portafolio {
+    display: flex;
+    align-items: flex-end;
+    /* background-color: #292F2E; */
+    height: 150px;
+}
+
+.project-hover .botones {
+    padding-bottom: 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 150px;
+    width: 200px;
+    z-index: 2;
+}
+
+.contenedor-proyectos button {
+    background-color: white;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 .project-hover h4 {
-    position: absolute;
-    bottom: 30%;
-    margin-top: 10px;
     font-weight: 700;
+    font-size: 30px;
 }
 
 .project-hover:hover {
@@ -523,6 +563,10 @@ form textarea {
 
 @media (max-width: 960px) {
 
+    .projects {
+        width: 100%;
+    }
+
     .video-container {
         width: 90%;
         top: 10%;
@@ -531,6 +575,17 @@ form textarea {
 
     header {
         height: 200px;
+    }
+
+    .contenedor-titulo {
+        width: 100%;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenedor-titulo h2 {
+        padding: 0;
     }
 
     header h1 {
@@ -551,7 +606,8 @@ form textarea {
     }
 
     header p {
-        transform: scale(0);
+        margin: 1rem;
+        font-size: 9px;
     }
 
     años {

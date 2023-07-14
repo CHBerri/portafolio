@@ -563,6 +563,10 @@ form textarea {
 
 @media (max-width: 960px) {
 
+    .project-hover {
+        opacity: 1;
+    }
+
     .projects {
         width: 100%;
     }
